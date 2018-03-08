@@ -4,13 +4,11 @@ python:
 # command to install dependencies
 sudo: required 
 addons:
-  apt:
-    packages:
-      - google-chrome-stable
+  chrome: stable
   firefox: latest
 install:
   - make development
   # command to run tests
 script:
-  - make test
-  - make test functional_tests
+  - xvfb-run make test
+  - xvfb-run make test functional_tests
