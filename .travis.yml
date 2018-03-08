@@ -2,12 +2,12 @@ language: python
 python:
   - "3.6"
 # command to install dependencies
-before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y firefox chromium-browser
+addons:
+  chrome: stable
+  firefox: latest
 install:
   - make development
   # command to run tests
 script:
-  - make test
-  - make test functional_tests
+  - xvfb-run make test
+  - xvfb-run make test functional_tests
