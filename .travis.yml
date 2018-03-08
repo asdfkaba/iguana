@@ -1,7 +1,6 @@
 language: python
 python:
   - "3.5"
-# command to install dependencies
 cache: pip
 sudo: required 
 addons:
@@ -21,8 +20,6 @@ before_script:
   - sleep 3
   - fluxbox >/dev/null 2>&1 &
   
-
-  # command to run tests
 script:
-  #- xvfb-run make test
+  - make test
   - make test functional_tests
