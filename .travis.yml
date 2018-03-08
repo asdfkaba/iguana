@@ -4,7 +4,7 @@ python:
 # command to install dependencies
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y firefox chromium
+  - sudo apt-get install -y firefox chromium-browser
 install:
   - make development
   # command to run tests
