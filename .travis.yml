@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.6"
+  - "3.5"
 # command to install dependencies
 cache: pip
 sudo: required 
@@ -12,4 +12,4 @@ install:
   # command to run tests
 script:
   - xvfb-run make test
-  - travis_wait 30 xvfb-run make test functional_tests
+  - xvfb-run make test functional_tests
