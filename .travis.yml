@@ -3,11 +3,13 @@ python:
   - "3.6"
 # command to install dependencies
 addons:
-  chrome: stable
+  apt:
+    packages:
+      - google-chrome-stable
   firefox: latest
 install:
   - make development
   # command to run tests
 script:
-  - xvfb-run make test
-  - xvfb-run make test functional_tests
+  - make test
+  - make test functional_tests
