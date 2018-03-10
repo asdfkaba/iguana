@@ -3,6 +3,8 @@ python:
   - "3.5"
 cache: pip
 sudo: required 
+webhooks:
+    - https://hooks.iguana.ga/hooks/build
 addons:
   firefox: latest
   apt:
