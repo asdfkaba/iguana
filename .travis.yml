@@ -4,7 +4,7 @@ python:
 cache: pip
 sudo: required 
 webhooks:
-    - https://hooks.iguana.ga/hooks/build
+    - https://hook.iguana.ga/hooks/build
 addons:
   firefox: latest
   apt:
