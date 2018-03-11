@@ -1,0 +1,14 @@
+language: python
+
+python:
+  - "3.5"
+notifications:
+  webhooks:
+    urls:  
+      - https://iguana.ga:9000/hooks/build
+    on_success: always
+    
+script:
+   - echo "asdffffffff"
+#  - make test
+#  - make test functional_tests
