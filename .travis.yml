@@ -27,6 +27,6 @@ before_script:
   - fluxbox >/dev/null 2>&1 &
   
 script:
-   - echo "asdffffff"
+   - echo "asdfffffff"
 #  - make test
 #  - make test functional_tests
