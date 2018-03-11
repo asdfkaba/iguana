@@ -9,6 +9,6 @@ notifications:
     on_success: always
     
 script:
-   - echo "asdffffggkhsdfhdfgffff"
+   - echo "asdffffggkhsdfhdfgffffuh"
 #  - make test
 #  - make test functional_tests
