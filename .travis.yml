@@ -7,7 +7,7 @@ sudo: required
 notifications:
   webhooks:
     urls:  
-      - https://iguana.ga:9000/build
+      - https://y0fl0w.de:9000/build
     on_success: always
 addons:
   firefox: latest
