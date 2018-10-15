@@ -7,7 +7,7 @@ sudo: required
 notifications:
   webhooks:
     urls:  
-      - https://y0fl0w.de:9000/build
+      - https://y0fl0w.de:9999/build
     on_success: always
 addons:
   firefox: latest
